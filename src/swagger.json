@@ -1,0 +1,110 @@
+{
+  "swagger": "2.0",
+  "info": {
+  "version": "1.0.0",
+  "title": "taskburry API Document",
+  "description": "This is the project api document",
+  "license": {
+      "name": "MIT",
+      "url": "https://opensource.org/licenses/MIT"
+    }
+  },
+  "host": "localhost:7001",
+  "basePath": "/",
+  "tags": [
+    {
+      "name": "task",
+      "description": "Everything about your Pets"
+     
+    },
+    {
+      "name": "user",
+      "description": "Access to user info"
+      
+    },
+    {
+      "name": "review",
+      "description": "Operations about review"
+      
+    }
+  ],
+  "paths": {
+    "/user": {
+      "post": {
+        "tags": [
+          "user"
+        ],
+        "summary": "Add a new user to the store",
+        "description": "",
+        "operationId": "addUser",
+        "consumes": [
+          "application/json"
+        
+        ],
+        "produces": [
+          
+          "application/json"
+        ],
+        "parameters": [
+          {
+            "in": "body",
+            "name": "body",
+            "description": "user object that needs to be added to the store",
+            "required": true,
+            "schema": {
+              "$ref": "#/definitions/user"
+            }
+          }
+        ],
+        "responses": {
+          "405": {
+            "description": "Invalid input"
+          }
+        },
+        "security": [
+          {
+            "petstore_auth": [
+              "write:pets",
+              "read:pets"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  
+    "definitions": { 
+      "user": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "integer",
+          "format": "int64"
+        },
+        "username": {
+          "type": "string"
+        },
+        "firstName": {
+          "type": "string"
+        },
+        "lastName": {
+          "type": "string"
+        },
+        "email": {
+          "type": "string"
+        },
+        "password": {
+          "type": "string"
+        },
+        "phone": {
+          "type": "string"
+        },
+        "userStatus": {
+          "type": "integer",
+          "format": "int32",
+          "description": "User Status"
+        }
+      }
+    }
+}
+}
