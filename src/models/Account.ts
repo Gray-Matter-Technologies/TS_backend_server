@@ -16,7 +16,7 @@ type validatePasvalidatePasswordswordFunction = (password:string) => string;
   firstName:string
   email: string;
   password: string;
-  userType: AccountType.admin | AccountType.client | AccountType.tasker;
+  
   phoneNumber: string;
   hashPassword:hashPasswordFunction;
   validatePassword : validatePasvalidatePasswordswordFunction;
@@ -29,7 +29,7 @@ const AccountSchema = new mongoose.Schema({
   firstName:String,
   password: String,
   phoneNumber: String,
-  userType: String
+
 },{ timestamps: true })
 
 

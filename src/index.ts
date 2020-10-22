@@ -24,13 +24,6 @@ app.use(bodyParser.urlencoded({ extended: false }))
 connectToDB();
 
 
-app.use(cookieSession({
-  name: 'session',
-  keys: ['key'],
-  maxAge: 24 * 60 * 60 * 1000 // 24 hours
-}))
-
-
 app.use(router);
 app.use('/swagger', swaggerUi.serve, swaggerUi.setup(swaggerDocument));
 app.listen(7001, () =>{

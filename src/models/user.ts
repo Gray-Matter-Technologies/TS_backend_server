@@ -2,7 +2,9 @@ import mongoose from "mongoose";
 
  type UserDoc = mongoose.Document & {
   email:string
+  password:string
   backgroundImg: string,
+  phoneNumber:string
   avatar: string;
   firstName:string
   lastName: string;
@@ -16,6 +18,8 @@ import mongoose from "mongoose";
 
 const UserSchema = new mongoose.Schema({
   email:String,
+  password:String,
+  phoneNumber:String,
   backgroundImg:String,
   avatar:String,
   lastName: String,

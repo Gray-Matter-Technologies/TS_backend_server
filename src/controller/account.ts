@@ -1,6 +1,7 @@
 import express, {NextFunction, Request, Response, } from 'express';
 import 'reflect-metadata';
 import{ Controller, Use,  GetMapping, PostMapping} from '../decorator';
+import { generateToken } from '../utils/jwt'
 import {addAccount} from '../service/account';
 import {createInfoTemplate} from '../service/user'
 const loginCheck = (req: Request, res: Response, next: NextFunction) =>{
@@ -16,12 +17,13 @@ const loginCheck = (req: Request, res: Response, next: NextFunction) =>{
 class DataController {
   @PostMapping('/signUp')
   async addAccount(req: Request, res: Response){
-    const { email,password,userType } = req.body;
-    const user =await addAccount(email,password,userType);
-     console.log(123)
-    await createInfoTemplate(email);
-    return res.json(user)
+    const { email,password } = req.body;
+    const user =await addAccount(email,password);
+    const token = generateToken(user._id)
+    return res.json({user, token});
   }
+
+  
 
 
 }

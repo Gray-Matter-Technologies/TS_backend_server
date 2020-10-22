@@ -18,7 +18,20 @@ export async function createInfoTemplate(_email:string) {
 
 
 
-export async function editUserInfo(_email:string, _skills:string[], _firstName:string, _lastName:string, _location:string, _about:string , _reviews:string, _overviews:string) {
-const res =  await User.findOneAndUpdate({email:_email},{skills:_skills,firstName:_firstName,lastName:_lastName,location:_location,about:_about, reviews:_reviews, overviews:_overviews});
+export async function editUserInfo(_email:string, _firstName:string, _lastName:string, _location:string, _phoneNumber:string) {
+const res =  await User.findOneAndUpdate({email:_email},{email:_email,firstName:_firstName,lastName:_lastName,location:_location,phoneNumber:_phoneNumber},{ "new": true});
  return res;
 }
+
+export async function showUserInfo(_email:string) {
+  const res =  await User.findOne({email:_email});
+
+  return ({
+    email:res?.email,
+    firstName:res?.firstName,
+    lastName:res?.lastName,
+    location:res?.location,
+    phoneNumber:res?.phoneNumber,
+    avatar:res?.avatar
+  })
+  }

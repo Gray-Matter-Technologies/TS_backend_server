@@ -1,6 +1,6 @@
 
 import {Login} from '../models/login'
-import {Account} from '../models/Account'
+import {Account} from '../models/account'
 export async function login(_email:string, _password:string) {
   const login = await Login.findOne({email:_email,password:_password}).exec()
   

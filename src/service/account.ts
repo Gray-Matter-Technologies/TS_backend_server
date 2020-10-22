@@ -1,9 +1,9 @@
 
-import {AccountType} from '../models/Account'
+import {AccountType} from '../models/account'
 import {Account} from '../models/account';
 
-export async function addAccount(_email:string, _password:string,_accounttype:AccountType) {
-  const account = new Account({email:_email, password:_password,userType:_accounttype});
+export async function addAccount(_email:string, _password:string) {
+  const account = new Account({email:_email, password:_password});
   await account.hashPassword()
   await account.save();
   console.log(account)

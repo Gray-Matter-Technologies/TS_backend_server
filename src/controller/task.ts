@@ -2,11 +2,11 @@ import{ Controller, Use,  GetMapping, PostMapping,PutMapping, DeleteMapping} fro
 import express, {NextFunction, Request, Response, } from 'express';
 import 'reflect-metadata';
 import {getAlltasks,postTask,changeTaskStatus,deleteTask} from '../service/task';
-
-
+import {Auth} from '../middleware/auth'
 
 @Controller('/task')
 class LoginController {
+  @Use(Auth)
   @GetMapping('/tasks')
   async getTasks(req: Request, res: Response) {
 
