@@ -17,6 +17,7 @@ import swaggerUi from 'swagger-ui-express';
 import * as swaggerDocument from './swagger.json'
 
 const app = express();
+app.set("port", 7001);
 app.use(express.static('public'));
 
 app.use(bodyParser.urlencoded({ extended: false }))
@@ -27,6 +28,6 @@ app.use(cors());
 
 app.use(router);
 app.use('/swagger', swaggerUi.serve, swaggerUi.setup(swaggerDocument));
-app.listen(7001, () =>{
- 
-})
+
+
+export default app;

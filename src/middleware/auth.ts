@@ -16,5 +16,5 @@ export function Auth(req:Request, res:Response, next:NextFunction ) {
     req.user = decoded;
     return next();
   }
-  return res.json('Access Denied');
+  return res.status(401).json('Access Denied');
 }

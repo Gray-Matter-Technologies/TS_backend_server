@@ -1,4 +1,5 @@
 import mongoose from "mongoose";
+import { Account } from "./account";
 
  type UserDoc = mongoose.Document & {
   email:string
@@ -12,7 +13,8 @@ import mongoose from "mongoose";
   about: string;
   skills: string[],
   reviews: string,
-  overviews:string
+  overviews:string,
+  
 };
 
 
@@ -28,7 +30,8 @@ const UserSchema = new mongoose.Schema({
   about: String,
   skills: Array,
   reviews: String,
-  overviews:String
+  overviews:String,
+
 
 },{ timestamps: true })
 

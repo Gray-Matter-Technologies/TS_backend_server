@@ -17,6 +17,12 @@ export async function createInfoTemplate(_email:string) {
 }
 
 
+export async function updateAvatar(_email:string,_avatarUrl:string) {
+  const res =  await User.findOneAndUpdate({email:_email},{avatar:_avatarUrl},{ "new": true});
+   return res;
+  }
+  
+
 
 export async function editUserInfo(_email:string, _firstName:string, _lastName:string, _location:string, _phoneNumber:string) {
 const res =  await User.findOneAndUpdate({email:_email},{email:_email,firstName:_firstName,lastName:_lastName,location:_location,phoneNumber:_phoneNumber},{ "new": true});
