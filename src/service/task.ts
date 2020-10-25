@@ -21,7 +21,9 @@ export async function postTask(_title:string,_price:number,_buget:number,_avatar
       details: _details
     }
   )
+  console.log(task)
   const result = await task.save()
+ 
   return result; 
 }
 
@@ -37,3 +39,12 @@ export async function changeTaskStatus(_id:string,_status:number) {
 export async function deleteTask(_id:string) {
   const result = await Task.findByIdAndDelete(_id);
 }
+
+
+export async function showTasks(_id:string) {
+  const result = await Task.find({email:_id}).populate('user','avatar lastName').exec()
+  console.log(result)
+  return result;
+}
+
+

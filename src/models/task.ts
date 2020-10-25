@@ -15,17 +15,21 @@ enum task_status {
   date: Date;
   status: number
   details: object
+  user: string
+  questions: object[]
 };
 
 
 const taskSchema = new mongoose.Schema({
+  email: {type:String, ref:'User'},
   budget: Number,
   avatar:String,
   title: String,
   location: String,
   date: Date,
   status: Number,
-  details: Object
+  details: Object,
+  questions: Array
 },{ timestamps: true })
 
 

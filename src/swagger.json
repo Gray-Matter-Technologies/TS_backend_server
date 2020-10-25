@@ -1,5 +1,6 @@
 {
-  "swagger": "2.0",
+  "swagger":"3.0",
+  
   "info": {
   "version": "1.0.0",
   "title": "taskburry API Document",
@@ -29,7 +30,7 @@
     }
   ],
   "paths": {
-    "/user": {
+    "/user/signUp": {
       "post": {
         "tags": [
           "user"
@@ -51,14 +52,18 @@
             "name": "body",
             "description": "user object that needs to be added to the store",
             "required": true,
-            "schema": {
-              "$ref": "#/definitions/user"
+            "example": {
+              "email" : "useremail@gmail.com",
+              "password" : "12345"
             }
           }
         ],
         "responses": {
           "405": {
             "description": "Invalid input"
+          },
+          "200": {
+            "description": "succ"
           }
         },
         "security": [
@@ -79,10 +84,7 @@
       "properties": {
         "id": {
           "type": "integer",
-          "format": "int64"
-        },
-        "username": {
-          "type": "string"
+          "format": "string"
         },
         "firstName": {
           "type": "string"
@@ -96,14 +98,19 @@
         "password": {
           "type": "string"
         },
-        "phone": {
+        "phoneNumber": {
           "type": "string"
         },
-        "userStatus": {
-          "type": "integer",
-          "format": "int32",
-          "description": "User Status"
+        "location": {
+          "type": "string"
+        },
+        "about": {
+          "type": "string"
+        },
+        "skills": {
+          "type": "string"
         }
+      
       }
     }
 }

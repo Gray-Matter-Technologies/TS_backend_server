@@ -1,13 +1,23 @@
 
-import {Login} from '../models/login'
+import { generateToken } from '../utils/jwt'
 import {Account} from '../models/account'
+
+
 export async function login(_email:string, _password:string) {
-  const login = await Login.findOne({email:_email,password:_password}).exec()
+  const login = await Account.findOne({email:_email}).exec()
   
-  console.log(_email,_password)
+  
   if(!login){
-    return -1;
+    console.log(131)
+    return 'fail';
   }
-  await login.validatePassword(_password);
+  const res =  await login.validatePassword(_password);
+  if(res){
+    const token = generateToken(login._id)
+    const result = [login._id,token,login.email]
+    return (result)
+  }else{
  
+    return 'fail';
+  }
 }

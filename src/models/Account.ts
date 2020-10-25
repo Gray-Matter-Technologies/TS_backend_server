@@ -11,7 +11,7 @@ type hashPasswordFunction = () => void;
 type validatePasvalidatePasswordswordFunction = (password:string) => string;
 
 
- type AccountDoc = mongoose.Document & {
+ export type AccountDoc = mongoose.Document & {
   lastName: string;
   firstName:string
   email: string;

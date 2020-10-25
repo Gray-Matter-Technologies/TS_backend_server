@@ -1,11 +1,11 @@
 import{ Controller, Use,  GetMapping, PostMapping,PutMapping, DeleteMapping} from '../decorator';
 import express, {NextFunction, Request, Response, } from 'express';
 import 'reflect-metadata';
-import {getAlltasks,postTask,changeTaskStatus,deleteTask} from '../service/task';
+import {getAlltasks,postTask,changeTaskStatus,deleteTask, showTasks} from '../service/task';
 import {Auth} from '../middleware/auth'
 
 @Controller('/task')
-class LoginController {
+class TaskController {
   @Use(Auth)
   @GetMapping('/tasks')
   async getTasks(req: Request, res: Response) {
@@ -28,7 +28,7 @@ class LoginController {
 
   @PostMapping('/task')
   async postTask(req: Request, res: Response) {
-
+  
     const {title, price, buget, avatar, location,date,status,details } = req.body;
     const result = await postTask(title,price,buget,avatar,location,date,status,details);
 
@@ -70,7 +70,16 @@ class LoginController {
     });
     }
 
-
+    @GetMapping('/mytasks/:userid')
+    async showMytasks(req: Request, res: Response){
+      const { userid } = req.params;
+      const user =  await showTasks(userid);
+      return res.json({
+        status: 200,
+        desc:"succ",
+        data: user
+      })
+    }
 
 
 

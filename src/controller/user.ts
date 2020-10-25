@@ -2,7 +2,6 @@ import express, {NextFunction, Request, Response, } from 'express';
 import 'reflect-metadata';
 import{ Controller, Use,  GetMapping, PostMapping,PutMapping} from '../decorator';
 import {editUserInfo, showUserInfo} from '../service/user';
-import {createInfoTemplate} from '../service/user'
 const loginCheck = (req: Request, res: Response, next: NextFunction) =>{
   const isLogin = req.session ? req.session.login : false;
   if(isLogin) {
@@ -34,6 +33,10 @@ class UserController {
       data: user
     })
   }
+
+
+  
+  
 
 
   

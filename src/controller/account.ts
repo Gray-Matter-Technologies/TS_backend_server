@@ -22,7 +22,7 @@ class DataController {
     const token = generateToken(user._id)
     return res.json({user, token});
   }
-
+  
   
 
 
