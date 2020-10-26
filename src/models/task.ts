@@ -8,15 +8,17 @@ enum task_status {
 
 
  type taskDoc = mongoose.Document & {
-  price: number;
+  email: string
+  budget: number;
   avatar:string;
   title: string;
   location: string;
   date: Date;
   status: number
   details: object
-  user: string
-  questions: object[]
+  questions: object[],
+  offers: object[]
+  assignedTo: string
 };
 
 
@@ -28,8 +30,10 @@ const taskSchema = new mongoose.Schema({
   location: String,
   date: Date,
   status: Number,
-  details: Object,
-  questions: Array
+  details: String,
+  questions: Array,
+  offers: Array,
+  assignedTo:{type:String, ref:'User'}
 },{ timestamps: true })
 
 

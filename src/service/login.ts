@@ -1,10 +1,10 @@
 
 import { generateToken } from '../utils/jwt'
-import {Account} from '../models/account'
+import {User} from '../models/user'
 
 
 export async function login(_email:string, _password:string) {
-  const login = await Account.findOne({email:_email}).exec()
+  const login = await User.findOne({email:_email}).exec()
   
   
   if(!login){

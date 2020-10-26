@@ -2,15 +2,8 @@ import express, {NextFunction, Request, Response, } from 'express';
 import 'reflect-metadata';
 import{ Controller, Use,  GetMapping, PostMapping,PutMapping} from '../decorator';
 import {editUserInfo, showUserInfo} from '../service/user';
-const loginCheck = (req: Request, res: Response, next: NextFunction) =>{
-  const isLogin = req.session ? req.session.login : false;
-  if(isLogin) {
-    next();
-  }else{
-    res.send("please login")
-  }
-}
 
+//edit use info
 @Controller('/user')
 class UserController {
   @PutMapping('/profile')
@@ -23,6 +16,7 @@ class UserController {
     })
   }
 
+  //get user info
   @GetMapping('/info/:email')
   async showInfo(req: Request, res: Response){
     const { email} = req.params;

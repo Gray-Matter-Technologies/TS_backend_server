@@ -1,5 +1,10 @@
 import {User} from '../models/user'
 
+type hashPasswordFunction = () => void;
+type validatePasvalidatePasswordswordFunction = (password:string) => string;
+
+
+
 export async function createInfoTemplate(_email:string) {
  const user =  new User({
     email :_email,

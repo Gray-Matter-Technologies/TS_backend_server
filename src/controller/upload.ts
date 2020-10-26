@@ -19,7 +19,7 @@ const upload = multer({ storage: storage }).single('file')
 
 @Controller('/')
 class UploadController {
-
+  //user update avatar
   @PostMapping('/upload/:email')
   async uploadAvatar(req: Request, res: Response){
     const{ email } = req.params

@@ -2,7 +2,7 @@ import{ Controller, Use,  GetMapping, PostMapping} from '../decorator';
 import express, {NextFunction, Request, Response, } from 'express';
 import 'reflect-metadata';
 import {login} from '../service/login';
-import { AccountType,AccountDoc } from '../models/account';
+
 
 
 
@@ -10,7 +10,7 @@ import { AccountType,AccountDoc } from '../models/account';
 @Controller('/')
 class LoginController {
 
-
+  //user login
   @PostMapping('/login')
   async login(req: Request, res: Response) {
 
@@ -18,15 +18,13 @@ class LoginController {
     console.log(email,password)
     const result = await login(email,password);
     if(result==='fail'){
-      res.json({
-        status: 400,
+      res.status(400).json({
         desc: 'Invaild email or password',
         data: result
       });
     }
     else{
       return res.json({
-        status: 200,
         desc: 'ok',
         data: {
          _id: result[0],
