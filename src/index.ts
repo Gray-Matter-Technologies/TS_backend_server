@@ -9,6 +9,7 @@ import './controller/login';
 import './controller/task';
 import './controller/user';
 import './controller/upload'
+import './controller/map'
 
 import bodyParser from 'body-parser';
 import cookieSession from 'cookie-session';
