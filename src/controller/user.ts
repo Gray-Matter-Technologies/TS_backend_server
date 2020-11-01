@@ -6,6 +6,15 @@ import {editUserInfo, showUserInfo} from '../service/user';
 //edit use info
 @Controller('/user')
 class UserController {
+
+  @GetMapping('/Auth')
+  async auth(req:Request, res:Response) {
+    return res.json({
+      enail: '18686'
+    })
+  }
+
+
   @PutMapping('/profile')
   async editProfile(req: Request, res: Response){
     const { email,firstName,lastName, location, phoneNumber } = req.body;

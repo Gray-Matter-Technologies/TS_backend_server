@@ -14,7 +14,7 @@ export async function postTask(_email:string, _title:string,_budget:number,_loca
     {
       email: _email,
       title: _title,
-      buget:_budget,
+      budget:_budget,
       avatar:avatar?.avatar,
       location:_location,
       date:_date,
