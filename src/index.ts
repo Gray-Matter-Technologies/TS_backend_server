@@ -10,6 +10,7 @@ import './controller/task';
 import './controller/user';
 import './controller/upload'
 import './controller/map'
+import './controller/notification';
 
 import bodyParser from 'body-parser';
 import cookieSession from 'cookie-session';

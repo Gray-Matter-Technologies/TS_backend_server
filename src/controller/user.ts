@@ -10,7 +10,7 @@ class UserController {
   @GetMapping('/Auth')
   async auth(req:Request, res:Response) {
     return res.json({
-      enail: '18686'
+      enail: 'lxf101@126.com'
     })
   }
 
