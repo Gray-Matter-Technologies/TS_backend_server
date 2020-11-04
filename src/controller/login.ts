@@ -29,7 +29,8 @@ class LoginController {
         data: {
          _id: result[0],
          token:result[1],
-         email:result[2]
+         email:result[2],
+         avatar:result[3]
         }
       });
     }

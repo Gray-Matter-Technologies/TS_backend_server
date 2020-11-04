@@ -8,13 +8,12 @@ export async function login(_email:string, _password:string) {
   
   
   if(!login){
-    console.log(131)
     return 'fail';
   }
   const res =  await login.validatePassword(_password);
   if(res){
     const token = generateToken(login._id)
-    const result = [login._id,token,login.email]
+    const result = [login._id,token,login.email,login.avatar]
     return (result)
   }else{
  

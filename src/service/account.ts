@@ -1,7 +1,7 @@
 
 
 import {User} from '../models/user';
-const DEFULT_AVATAR = 'localhost:7001:/avatar/defaultAvatar.jpg'
+const DEFULT_AVATAR = '/avatar/defaultAvatar.jpg'
 
 export async function addAccount(_email:string, _password:string) {
   const account = new User({email:_email, password:_password, avatar:DEFULT_AVATAR});
