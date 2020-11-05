@@ -12,7 +12,7 @@ export async function createInfoTemplate(_email:string) {
     lastName: "",
     location:"location",
     about: "please write your desc",
-    skills: ["his user has not added any skills yet."],
+    skills: [],
     reviews: "no reviews yet",
     overview: "no overview yet"
   })
@@ -24,6 +24,7 @@ export async function createInfoTemplate(_email:string) {
 
 export async function updateAvatar(_email:string,_avatarUrl:string) {
   const res =  await User.findOneAndUpdate({email:_email},{avatar:_avatarUrl},{ "new": true});
+  
    return res;
   }
   

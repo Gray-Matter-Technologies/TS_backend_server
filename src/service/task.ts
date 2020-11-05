@@ -2,6 +2,8 @@
 import {Task} from '../models/task'
 import {User} from '../models/user'
 
+const subData = require('./melb.json')
+const fs = require('fs');
 
 
 
@@ -62,7 +64,7 @@ export async function showTasks(_id:string) {
 }
 
 
-export async function addQuestios(_taskId:string, _email:string, _content:string) {
+export async function addQuestions(_taskId:string, _email:string, _content:string) {
   const user = await User.findOne({email:_email})
   try{
   const user_avatar = user?.avatar;
@@ -116,4 +118,22 @@ export async function getAssigned(_email:string){
   return tasks;
 }
 
+
+type Obj ={
+  name: string,
+  coordinates: number[]
+}
+
+export async function serachAddressService(_address:string){
+  const addressChars = _address.split('');
+  const suburbs:Array<Obj> = subData.name;
+  let resultList:string[] = [];
+  suburbs.map(item =>{
+    const itemChars = item.name.split('')
+    if(addressChars[0] ===itemChars[0]){
+      resultList.push(item.name)
+    } 
+  })
+    return resultList;
+}
 

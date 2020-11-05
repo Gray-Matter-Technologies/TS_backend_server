@@ -11,7 +11,7 @@ class NotificationController {
     const {email} = req.body;
     const result = await getAllNotifications(email);
         if(result){
-            let questions:any = [];
+            let questions:Object[] = [];
             result.forEach(item=>{
                 item.questions.forEach(quesItem=>{
                     questions.push(quesItem);

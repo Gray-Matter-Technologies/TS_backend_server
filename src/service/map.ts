@@ -31,12 +31,10 @@ export async function getMapService(){
  result.map(task_data=>{
   
    data1.map(data2 =>{
-    // console.log(data2.properties.name)
+    
       if(task_data.location ===data2.properties.name){
-          console.log(124)
           const len  = data2.geometry.coordinates[0][0].length
-          console.log(len)
-        //  console.log(task_data.location)
+         
           return_data.push({
             title: task_data.title,
             avatar: task_data.avatar,

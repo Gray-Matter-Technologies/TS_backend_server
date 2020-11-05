@@ -2,8 +2,10 @@ import { RequestHandler } from 'express';
 
 
 
-export function Use(middleware:RequestHandler){
+export function Use(middleware:any){
   return function(target: any, key: string){
-    Reflect.defineMetadata('middleware', middleware, target, key)
+    const orginMiddlewares = Reflect.getMetadata('middlewares', target, key) || []
+    orginMiddlewares.push(middleware)
+    Reflect.defineMetadata('middlewares', orginMiddlewares, target, key)
   }
 }
