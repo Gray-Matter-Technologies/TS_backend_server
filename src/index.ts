@@ -23,7 +23,7 @@ import * as swaggerDocument from './swagger.json'
 
 
 const app = express();
-app.set("port", PORT);
+app.set("port", PORT || '7001');
 app.use(express.static('public'));
 
 
