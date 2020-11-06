@@ -11,7 +11,6 @@ import{Logger} from '../middleware/logger'
 @Controller('/')
 class LoginController {
 
-  //user login
   @Use(Logger)
   @PostMapping('/login')
   async login(req: Request, res: Response) {

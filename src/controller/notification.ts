@@ -2,10 +2,14 @@ import{ Controller, Use,  GetMapping, PostMapping,PutMapping, DeleteMapping} fro
 import express, {NextFunction, Request, Response, } from 'express';
 import 'reflect-metadata';
 import { getAllNotifications } from '../service/notification';
+import { Logger } from '../middleware/logger';
+import { Auth } from '../middleware/auth';
 
 @Controller('/notification')
 class NotificationController {
   //browse all notification
+  @Use(Auth)
+  @Use(Logger)
   @PostMapping('/all')
   async getNotifications(req: Request, res: Response) {
     const {email} = req.body;

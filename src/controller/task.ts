@@ -9,8 +9,8 @@ import { Logger } from '../middleware/logger';
 @Controller('/task')
 class TaskController {
 
-  //browse all tasks
-
+ 
+  @Use(Logger)
   @GetMapping('/tasks')
   async getTasks(req: Request, res: Response) {
 
@@ -28,7 +28,7 @@ class TaskController {
     }
 }
 
-  //post a tas@Use(Auth)
+  @Use(Auth)
   @Use(Logger)
   @PostMapping('/task')
   async postTask(req: Request, res: Response) {
@@ -41,10 +41,6 @@ class TaskController {
     });
   }
 
-
-  
-  //complete a task
- 
   @Use(Logger)
   @PutMapping('/status/:id')
   async completeTask(req: Request, res: Response) {
@@ -63,8 +59,6 @@ class TaskController {
     }
   }
 
-  //delete a task
-
   @Use(Logger)
   @DeleteMapping('/task/:id')
   async deleteTask(req: Request, res: Response) {
@@ -77,7 +71,6 @@ class TaskController {
     });
     }
 
-    // get my posted tasks
     @Use(Auth)
     @Use(Logger)
     @GetMapping('/mytasks/:userid')
@@ -89,8 +82,7 @@ class TaskController {
       })
     }
 
-    //add a question to a task
- 
+  
     @Use(Logger)
     @PostMapping('/questions/:taskid')
     async addQuestions(req: Request, res: Response){
@@ -105,8 +97,6 @@ class TaskController {
     }
 
 
-    // add a offer to a task
-    
     @Use(Logger)
     @PostMapping('/offers/:taskid')
     async makeoffer(req: Request, res: Response){
@@ -119,8 +109,6 @@ class TaskController {
       })
     }
 
-    //assign a task to a offer
-   
     @Use(Logger)
     @PostMapping('/assign/:taskid')
     async assignTask(req: Request, res: Response){
@@ -133,8 +121,6 @@ class TaskController {
       })
     }
 
-    //get all my assigned tasks
-   
     @Use(Logger)
     @GetMapping('/assign/tasks/:email')
     async getAssigned(req: Request, res: Response){
@@ -148,7 +134,7 @@ class TaskController {
 
 
     @GetMapping('/address/:address')
-    
+    @Use(Auth)
     @Use(Logger)
     async getAvailableAddress(req: Request, res: Response){
       const { address } = req.params;
@@ -158,11 +144,6 @@ class TaskController {
         result: resultList
       })
     }
-   
- 
- 
-
-    
   }
 
 

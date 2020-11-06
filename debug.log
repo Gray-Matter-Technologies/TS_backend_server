@@ -1,0 +1,185 @@
+> 2020-11-06 16:28:40 [34mdebug[39m: Logging initialized at debug level
+> 2020-11-06 16:28:48 [34mdebug[39m: Logging initialized at debug level
+> 2020-11-06 16:29:03 [32minfo[39m: handle request url /login
+> 2020-11-06 16:29:28 [34mdebug[39m: Logging initialized at debug level
+> 2020-11-06 16:47:36 [34mdebug[39m: Logging initialized at debug level
+> 2020-11-06 16:47:43 [34mdebug[39m: Logging initialized at debug level
+> 2020-11-06 16:47:52 [34mdebug[39m: Logging initialized at debug level
+> 2020-11-06 16:48:51 [32minfo[39m: handle request url /user/signUp
+> 2020-11-06 16:49:02 [32minfo[39m: handle request url /login
+> 2020-11-06 16:49:04 [32minfo[39m: handle request url /login
+> 2020-11-06 16:49:04 [32minfo[39m: handle request url /login
+> 2020-11-06 16:49:08 [32minfo[39m: handle request url /login
+> 2020-11-07 00:40:31 [32minfo[39m: handle request url /map/tasks
+> 2020-11-07 00:42:28 [34mdebug[39m: Logging initialized at debug level
+> 2020-11-07 00:42:33 [34mdebug[39m: Logging initialized at debug level
+> 2020-11-07 00:44:14 [32minfo[39m: handle request url /login
+> 2020-11-07 00:45:50 [34mdebug[39m: Logging initialized at debug level
+> 2020-11-07 00:45:55 [34mdebug[39m: Logging initialized at debug level
+> 2020-11-07 00:55:00 [34mdebug[39m: Logging initialized at debug level
+> 2020-11-07 00:55:05 [34mdebug[39m: Logging initialized at debug level
+> 2020-11-07 00:58:31 [34mdebug[39m: Logging initialized at debug level
+> 2020-11-07 00:58:33 [34mdebug[39m: Logging initialized at debug level
+> 2020-11-07 00:59:13 [34mdebug[39m: Logging initialized at debug level
+> 2020-11-07 00:59:20 [34mdebug[39m: Logging initialized at debug level
+> 2020-11-07 01:00:41 [34mdebug[39m: Logging initialized at debug level
+> 2020-11-07 01:00:46 [34mdebug[39m: Logging initialized at debug level
+> 2020-11-07 01:00:55 [34mdebug[39m: Logging initialized at debug level
+> 2020-11-07 01:01:06 [34mdebug[39m: Logging initialized at debug level
+> 2020-11-07 01:01:20 [34mdebug[39m: Logging initialized at debug level
+> 2020-11-07 01:01:23 [34mdebug[39m: Logging initialized at debug level
+> 2020-11-07 01:01:31 [34mdebug[39m: Logging initialized at debug level
+> 2020-11-07 01:01:37 [34mdebug[39m: Logging initialized at debug level
+> 2020-11-07 01:01:41 [34mdebug[39m: Logging initialized at debug level
+> 2020-11-07 01:01:44 [34mdebug[39m: Logging initialized at debug level
+> 2020-11-07 01:01:48 [34mdebug[39m: Logging initialized at debug level
+> 2020-11-07 01:01:51 [34mdebug[39m: Logging initialized at debug level
+> 2020-11-07 01:01:53 [34mdebug[39m: Logging initialized at debug level
+> 2020-11-07 01:01:55 [34mdebug[39m: Logging initialized at debug level
+> 2020-11-07 01:02:26 [34mdebug[39m: Logging initialized at debug level
+> 2020-11-07 01:02:42 [34mdebug[39m: Logging initialized at debug level
+> 2020-11-07 01:02:49 [34mdebug[39m: Logging initialized at debug level
+> 2020-11-07 01:03:30 [32minfo[39m: handle request url /login
+> 2020-11-07 01:03:30 [32minfo[39m: handle request url /user/info/18686782752@163.com
+> 2020-11-07 01:03:36 [32minfo[39m: handle request url /user/Auth
+> 2020-11-07 01:03:37 [32minfo[39m: handle request url /user/info/undefined
+> 2020-11-07 01:03:39 [32minfo[39m: handle request url /user/Auth
+> 2020-11-07 01:03:39 [32minfo[39m: handle request url /user/info/undefined
+> 2020-11-07 01:03:40 [32minfo[39m: handle request url /user/Auth
+> 2020-11-07 01:03:40 [32minfo[39m: handle request url /user/info/undefined
+> 2020-11-07 01:03:50 [32minfo[39m: handle request url /user/Auth
+> 2020-11-07 01:03:50 [32minfo[39m: handle request url /user/info/undefined
+> 2020-11-07 01:03:50 [32minfo[39m: handle request url /user/Auth
+> 2020-11-07 01:03:50 [32minfo[39m: handle request url /user/info/undefined
+> 2020-11-07 01:04:14 [34mdebug[39m: Logging initialized at debug level
+> 2020-11-07 01:04:15 [32minfo[39m: handle request url /user/Auth
+> 2020-11-07 01:04:15 [32minfo[39m: handle request url /user/info/undefined
+> 2020-11-07 01:04:16 [32minfo[39m: handle request url /user/Auth
+> 2020-11-07 01:04:16 [32minfo[39m: handle request url /user/info/undefined
+> 2020-11-07 01:04:17 [32minfo[39m: handle request url /user/Auth
+> 2020-11-07 01:04:17 [32minfo[39m: handle request url /user/info/undefined
+> 2020-11-07 01:04:17 [32minfo[39m: handle request url /user/Auth
+> 2020-11-07 01:04:17 [32minfo[39m: handle request url /user/info/undefined
+> 2020-11-07 01:04:21 [32minfo[39m: handle request url /user/Auth
+> 2020-11-07 01:04:21 [32minfo[39m: handle request url /user/info/undefined
+> 2020-11-07 01:04:27 [32minfo[39m: handle request url /user/Auth
+> 2020-11-07 01:04:37 [32minfo[39m: handle request url /login
+> 2020-11-07 01:04:42 [32minfo[39m: handle request url /user/Auth
+> 2020-11-07 01:04:42 [32minfo[39m: handle request url /user/info/undefined
+> 2020-11-07 01:04:43 [32minfo[39m: handle request url /user/Auth
+> 2020-11-07 01:04:43 [32minfo[39m: handle request url /user/info/undefined
+> 2020-11-07 01:04:44 [32minfo[39m: handle request url /user/Auth
+> 2020-11-07 01:04:44 [32minfo[39m: handle request url /user/info/undefined
+> 2020-11-07 01:04:44 [32minfo[39m: handle request url /user/Auth
+> 2020-11-07 01:04:44 [32minfo[39m: handle request url /user/info/undefined
+> 2020-11-07 01:04:44 [32minfo[39m: handle request url /user/Auth
+> 2020-11-07 01:04:45 [32minfo[39m: handle request url /user/info/undefined
+> 2020-11-07 01:05:02 [34mdebug[39m: Logging initialized at debug level
+> 2020-11-07 01:05:09 [34mdebug[39m: Logging initialized at debug level
+> 2020-11-07 01:05:17 [34mdebug[39m: Logging initialized at debug level
+> 2020-11-07 01:05:25 [34mdebug[39m: Logging initialized at debug level
+> 2020-11-07 01:05:26 [32minfo[39m: handle request url /user/Auth
+> 2020-11-07 01:05:26 [32minfo[39m: handle request url /user/info/18686782752@163.com
+> 2020-11-07 01:05:30 [32minfo[39m: handle request url /user/profile
+> 2020-11-07 01:05:32 [32minfo[39m: handle request url /user/Auth
+> 2020-11-07 01:05:32 [32minfo[39m: handle request url /user/info/18686782752@163.com
+> 2020-11-07 01:05:37 [32minfo[39m: handle request url /user/profile
+> 2020-11-07 01:05:38 [32minfo[39m: handle request url /user/Auth
+> 2020-11-07 01:05:39 [32minfo[39m: handle request url /user/info/18686782752@163.com
+> 2020-11-07 01:06:01 [34mdebug[39m: Logging initialized at debug level
+> 2020-11-07 01:06:03 [34mdebug[39m: Logging initialized at debug level
+> 2020-11-07 01:06:05 [34mdebug[39m: Logging initialized at debug level
+> 2020-11-07 01:06:08 [34mdebug[39m: Logging initialized at debug level
+> 2020-11-07 01:06:09 [34mdebug[39m: Logging initialized at debug level
+> 2020-11-07 01:06:26 [34mdebug[39m: Logging initialized at debug level
+> 2020-11-07 01:06:28 [34mdebug[39m: Logging initialized at debug level
+> 2020-11-07 01:06:30 [34mdebug[39m: Logging initialized at debug level
+> 2020-11-07 01:06:35 [34mdebug[39m: Logging initialized at debug level
+> 2020-11-07 01:06:44 [34mdebug[39m: Logging initialized at debug level
+> 2020-11-07 01:06:54 [34mdebug[39m: Logging initialized at debug level
+> 2020-11-07 01:06:57 [34mdebug[39m: Logging initialized at debug level
+> 2020-11-07 01:07:22 [34mdebug[39m: Logging initialized at debug level
+> 2020-11-07 01:07:44 [34mdebug[39m: Logging initialized at debug level
+> 2020-11-07 01:07:45 [34mdebug[39m: Logging initialized at debug level
+> 2020-11-07 01:07:54 [34mdebug[39m: Logging initialized at debug level
+> 2020-11-07 01:08:17 [34mdebug[39m: Logging initialized at debug level
+> 2020-11-07 01:08:22 [34mdebug[39m: Logging initialized at debug level
+> 2020-11-07 01:08:24 [34mdebug[39m: Logging initialized at debug level
+> 2020-11-07 01:08:26 [34mdebug[39m: Logging initialized at debug level
+> 2020-11-07 01:08:30 [34mdebug[39m: Logging initialized at debug level
+> 2020-11-07 01:08:35 [34mdebug[39m: Logging initialized at debug level
+> 2020-11-07 01:08:38 [34mdebug[39m: Logging initialized at debug level
+> 2020-11-07 01:08:41 [34mdebug[39m: Logging initialized at debug level
+> 2020-11-07 01:08:44 [34mdebug[39m: Logging initialized at debug level
+> 2020-11-07 01:08:47 [34mdebug[39m: Logging initialized at debug level
+> 2020-11-07 01:08:49 [34mdebug[39m: Logging initialized at debug level
+> 2020-11-07 01:08:53 [34mdebug[39m: Logging initialized at debug level
+> 2020-11-07 01:08:58 [34mdebug[39m: Logging initialized at debug level
+> 2020-11-07 01:09:00 [34mdebug[39m: Logging initialized at debug level
+> 2020-11-07 01:09:02 [34mdebug[39m: Logging initialized at debug level
+> 2020-11-07 01:09:04 [34mdebug[39m: Logging initialized at debug level
+> 2020-11-07 01:09:06 [34mdebug[39m: Logging initialized at debug level
+> 2020-11-07 01:09:09 [34mdebug[39m: Logging initialized at debug level
+> 2020-11-07 01:09:11 [34mdebug[39m: Logging initialized at debug level
+> 2020-11-07 01:09:18 [34mdebug[39m: Logging initialized at debug level
+> 2020-11-07 01:09:42 [34mdebug[39m: Logging initialized at debug level
+> 2020-11-07 01:09:45 [34mdebug[39m: Logging initialized at debug level
+> 2020-11-07 01:09:47 [34mdebug[39m: Logging initialized at debug level
+> 2020-11-07 01:09:49 [34mdebug[39m: Logging initialized at debug level
+> 2020-11-07 01:10:12 [34mdebug[39m: Logging initialized at debug level
+> 2020-11-07 01:10:23 [34mdebug[39m: Logging initialized at debug level
+> 2020-11-07 01:10:59 [34mdebug[39m: Logging initialized at debug level
+> 2020-11-07 01:11:35 [32minfo[39m: handle request url /task/tasks
+> 2020-11-07 01:11:57 [32minfo[39m: handle request url /login
+> 2020-11-07 01:12:20 [32minfo[39m: handle request url /task/tasks
+> 2020-11-07 01:12:23 [32minfo[39m: handle request url /map/tasks
+> 2020-11-07 01:12:28 [32minfo[39m: handle request url /task/tasks
+> 2020-11-07 01:12:35 [32minfo[39m: handle request url /task/address/C
+> 2020-11-07 01:12:57 [32minfo[39m: handle request url /task/tasks
+> 2020-11-07 01:24:04 [32minfo[39m: handle request url /login
+> 2020-11-07 01:24:13 [32minfo[39m: handle request url /task/address/C
+> 2020-11-07 01:24:18 [32minfo[39m: handle request url /task/task
+> 2020-11-07 01:24:19 [32minfo[39m: handle request url /task/tasks
+> 2020-11-07 01:24:35 [32minfo[39m: handle request url /task/questions/5fa55c92ce1c4217e4b16f72
+> 2020-11-07 01:24:35 [32minfo[39m: handle request url /task/tasks
+> 2020-11-07 01:24:42 [32minfo[39m: handle request url /user/Auth
+> 2020-11-07 01:24:42 [32minfo[39m: handle request url /notification/all
+> 2020-11-07 01:24:42 [32minfo[39m: handle request url /notification/all
+> 2020-11-07 01:24:46 [32minfo[39m: handle request url /task/tasks
+> 2020-11-07 01:24:53 [32minfo[39m: handle request url /user/Auth
+> 2020-11-07 01:24:53 [32minfo[39m: handle request url /notification/all
+> 2020-11-07 01:24:53 [32minfo[39m: handle request url /notification/all
+> 2020-11-07 01:24:58 [32minfo[39m: handle request url /task/tasks
+> 2020-11-07 01:25:05 [32minfo[39m: handle request url /task/offers/5fa55c92ce1c4217e4b16f72
+> 2020-11-07 01:25:05 [32minfo[39m: handle request url /task/tasks
+> 2020-11-07 01:25:17 [32minfo[39m: handle request url /user/Auth
+> 2020-11-07 01:25:17 [32minfo[39m: handle request url /user/info/18686782752@163.com
+> 2020-11-07 01:25:35 [32minfo[39m: handle request url /user/info/18686782752@163.com
+> 2020-11-07 01:25:37 [32minfo[39m: handle request url /user/Auth
+> 2020-11-07 01:25:37 [32minfo[39m: handle request url /user/info/18686782752@163.com
+> 2020-11-07 01:25:38 [32minfo[39m: handle request url /user/Auth
+> 2020-11-07 01:25:38 [32minfo[39m: handle request url /user/info/18686782752@163.com
+> 2020-11-07 01:25:39 [32minfo[39m: handle request url /user/Auth
+> 2020-11-07 01:25:39 [32minfo[39m: handle request url /user/info/18686782752@163.com
+> 2020-11-07 01:25:39 [32minfo[39m: handle request url /user/Auth
+> 2020-11-07 01:25:39 [32minfo[39m: handle request url /user/info/18686782752@163.com
+> 2020-11-07 01:25:39 [32minfo[39m: handle request url /user/Auth
+> 2020-11-07 01:25:39 [32minfo[39m: handle request url /user/info/18686782752@163.com
+> 2020-11-07 01:25:40 [32minfo[39m: handle request url /user/Auth
+> 2020-11-07 01:25:40 [32minfo[39m: handle request url /user/info/18686782752@163.com
+> 2020-11-07 01:25:45 [32minfo[39m: handle request url /user/profile
+> 2020-11-07 01:25:46 [32minfo[39m: handle request url /user/Auth
+> 2020-11-07 01:25:46 [32minfo[39m: handle request url /user/info/18686782752@163.com
+> 2020-11-07 01:25:57 [32minfo[39m: handle request url /user/profile
+> 2020-11-07 01:25:58 [32minfo[39m: handle request url /user/Auth
+> 2020-11-07 01:25:58 [32minfo[39m: handle request url /user/info/18686782752@163.com
+> 2020-11-07 01:26:01 [32minfo[39m: handle request url /user/profile
+> 2020-11-07 01:26:02 [32minfo[39m: handle request url /user/Auth
+> 2020-11-07 01:26:03 [32minfo[39m: handle request url /user/info/18686782752@163.com
+> 2020-11-07 01:26:05 [32minfo[39m: handle request url /map/tasks
+> 2020-11-07 01:26:06 [32minfo[39m: handle request url /task/tasks
+> 2020-11-07 01:26:36 [32minfo[39m: handle request url /map/tasks
+> 2020-11-07 01:26:50 [32minfo[39m: handle request url /map/tasks
+> 2020-11-07 01:26:51 [32minfo[39m: handle request url /task/tasks
+> 2020-11-07 01:27:18 [32minfo[39m: handle request url /map/tasks
+> 2020-11-07 01:27:20 [32minfo[39m: handle request url /task/tasks

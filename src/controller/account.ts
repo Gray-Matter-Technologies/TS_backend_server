@@ -9,6 +9,7 @@ import { body, check, validationResult } from "express-validator";
 
 @Controller('/user')
 class DataController {
+  
   @Use(Logger)
   @PostMapping('/signUp')
   async addAccount(req: Request, res: Response){

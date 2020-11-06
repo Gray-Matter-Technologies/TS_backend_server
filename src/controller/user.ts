@@ -8,10 +8,11 @@ import { body, check, validationResult } from "express-validator";
 import { Auth } from '../middleware/auth';
 import{Logger} from '../middleware/logger'
 
-//edit use info
+
 @Controller('/user')
 class UserController {
 
+  @Use(Logger)
   @PostMapping('/Auth')
   async auth(req:Request, res:Response) {
     const {token} = req.body;
@@ -29,7 +30,8 @@ class UserController {
     }
   }
 
-
+  @Use(Auth)
+  @Use(Logger)
   @PutMapping('/profile')
   async editProfile(req: Request, res: Response){
     await check("email", "Email is not valid").isEmail().run(req);
@@ -41,26 +43,35 @@ class UserController {
         e:errors
       })
   } 
+    
 
-
-    const { email,firstName,lastName, location, phoneNumber } = req.body;
-
-    const user =  await editUserInfo(email,firstName,lastName, location, phoneNumber);
+    const { email,
+            firstName,
+            lastName, 
+            location, 
+            phoneNumber } = req.body;
+    console.log(email)
+    const user =  await editUserInfo(
+       email,
+       firstName, 
+       lastName,
+       location, 
+       phoneNumber);
 
     return res.json({
       user
     })
   }
 
-  //get user info
-
+ 
+  @Use(Auth)
+  @Use(Logger)
   @GetMapping('/info/:email')
   async showInfo(req: Request, res: Response){
+    console.log(req)
     const { email} = req.params;
     const user =  await showUserInfo(email);
     return res.json({
-      status: 200,
-      desc:"succ",
       data: user
     })
   }
