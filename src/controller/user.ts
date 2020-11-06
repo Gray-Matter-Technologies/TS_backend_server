@@ -5,6 +5,8 @@ import {editUserInfo, showUserInfo} from '../service/user';
 import { validateToken } from '../utils/jwt'
 import {authSerivce} from '../service/auth'
 import { body, check, validationResult } from "express-validator";
+import { Auth } from '../middleware/auth';
+import{Logger} from '../middleware/logger'
 
 //edit use info
 @Controller('/user')
@@ -51,6 +53,7 @@ class UserController {
   }
 
   //get user info
+
   @GetMapping('/info/:email')
   async showInfo(req: Request, res: Response){
     const { email} = req.params;

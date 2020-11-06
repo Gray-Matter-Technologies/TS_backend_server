@@ -28,8 +28,7 @@ class TaskController {
     }
 }
 
-  //post a task
-  @Use(Auth)
+  //post a tas@Use(Auth)
   @Use(Logger)
   @PostMapping('/task')
   async postTask(req: Request, res: Response) {
@@ -45,7 +44,7 @@ class TaskController {
 
   
   //complete a task
-  @Use(Auth)
+ 
   @Use(Logger)
   @PutMapping('/status/:id')
   async completeTask(req: Request, res: Response) {
@@ -65,7 +64,7 @@ class TaskController {
   }
 
   //delete a task
-  @Use(Auth)
+
   @Use(Logger)
   @DeleteMapping('/task/:id')
   async deleteTask(req: Request, res: Response) {
@@ -91,7 +90,7 @@ class TaskController {
     }
 
     //add a question to a task
-    @Use(Auth)
+ 
     @Use(Logger)
     @PostMapping('/questions/:taskid')
     async addQuestions(req: Request, res: Response){
@@ -107,7 +106,7 @@ class TaskController {
 
 
     // add a offer to a task
-    @Use(Auth)
+    
     @Use(Logger)
     @PostMapping('/offers/:taskid')
     async makeoffer(req: Request, res: Response){
@@ -121,7 +120,7 @@ class TaskController {
     }
 
     //assign a task to a offer
-    @Use(Auth)
+   
     @Use(Logger)
     @PostMapping('/assign/:taskid')
     async assignTask(req: Request, res: Response){
@@ -135,7 +134,7 @@ class TaskController {
     }
 
     //get all my assigned tasks
-    @Use(Auth)
+   
     @Use(Logger)
     @GetMapping('/assign/tasks/:email')
     async getAssigned(req: Request, res: Response){
@@ -149,7 +148,7 @@ class TaskController {
 
 
     @GetMapping('/address/:address')
-    @Use(Auth)
+    
     @Use(Logger)
     async getAvailableAddress(req: Request, res: Response){
       const { address } = req.params;
