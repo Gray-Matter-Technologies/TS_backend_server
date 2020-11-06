@@ -2,8 +2,10 @@ const mongoose = require('mongoose')
 
 
 exports.connectToDB = () =>{
-  const { DB_HOST, DB_PORT, DB_DATABASE } = process.env;
-  const coonectString = `mongodb://${DB_HOST}:${DB_PORT}/${DB_DATABASE}`
+  const { FULL_CONNECTION_STRING, DB_HOST, DB_PORT, DB_DATABASE } = process.env;
+  const connectString = FULL_CONNECTION_STRING || `mongodb://${DB_HOST}:${DB_PORT}/${DB_DATABASE}`;
+
+  console.log(connectString);
 
   const db = mongoose.connection;
   db.on('connected', () =>{
@@ -17,7 +19,7 @@ exports.connectToDB = () =>{
   db.on('disconnected', () =>{
     console.log('disconnected');
   });
-  mongoose.connect(coonectString,{ useNewUrlParser: true },{ useUnifiedTopology: true } );
+  mongoose.connect(connectString,{ useNewUrlParser: true },{ useUnifiedTopology: true } );
 
 
 };
