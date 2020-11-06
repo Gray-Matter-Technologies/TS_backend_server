@@ -5,9 +5,6 @@ import { Auth } from '../middleware/auth';
 import{Logger} from '../middleware/logger'
 
 
-
-
-
 @Controller('/')
 class LoginController {
 

@@ -8,8 +8,10 @@ const fs = require('fs');
 
 
 export async function postTask(_email:string, _title:string,_budget:number,_location:string,_date:Date,_details:object) {
-  const avatar = await User.findOne({email:_email},'avatar')
- 
+  const user = await User.findOne({email:_email})
+  const avatar = user?.avatar;
+  const name = user?.lastName;
+
 
   console.log(avatar)
   const task = new Task(
@@ -17,7 +19,8 @@ export async function postTask(_email:string, _title:string,_budget:number,_loca
       email: _email,
       title: _title,
       budget:_budget,
-      avatar:avatar?.avatar,
+      name:name,
+      avatar:avatar,
       location:_location,
       date:_date,
       status:1,
@@ -27,15 +30,15 @@ export async function postTask(_email:string, _title:string,_budget:number,_loca
   )
   //console.log(task)
   const result = await task.save()
- 
-  return result; 
+
+  return result;
 }
 
 
 
  async function changeTaskStatus(_id:string,_status:number) {
   const result = await Task.findByIdAndUpdate(_id, {status:_status})
-  return result; 
+  return result;
 }
 
 
@@ -53,7 +56,7 @@ export async function deleteTask(_id:string) {
 
 export async function getAlltasks() {
   const tasks = await Task.find({status: 1,}).sort({date: 'desc'}).populate('user', 'avatar lastName').exec()
-  return tasks; 
+  return tasks;
 }
 
 
@@ -69,7 +72,7 @@ export async function addQuestions(_taskId:string, _email:string, _content:strin
   try{
   const user_avatar = user?.avatar;
   const user_lastName = user?.lastName;
-  
+
   const task = await Task.findById(_taskId);
   const question = {name:user_lastName,avatar:user_avatar,content:_content}
   //console.log(task?.questions)
@@ -87,7 +90,7 @@ export async function makeOffer(_taskId:string, _email:string, _budget:string) {
   try{
   const user_avatar = user?.avatar;
   const user_lastName = user?.lastName;
-  
+
   const task = await Task.findById(_taskId);
   const offer = {name:user_lastName,avatar:user_avatar,budget:_budget}
   //console.log(task?.questions)
@@ -97,7 +100,7 @@ export async function makeOffer(_taskId:string, _email:string, _budget:string) {
   }catch(e){
     console.log(e)
   }
-  
+
 }
 
 export async function assignTask(_taskId:string,_email:string){
@@ -132,7 +135,7 @@ export async function serachAddressService(_address:string){
     const itemChars = item.name.split('')
     if(addressChars[0] ===itemChars[0]){
       resultList.push(item.name)
-    } 
+    }
   })
     return resultList;
 }

@@ -1,8 +1,11 @@
-require('dotenv').config();
+try {
+  require('dotenv').config();
+} catch (e) {}
 import express from 'express';
 const cors = require('cors')
 
 const { connectToDB } = require('./utils/db')
+const { PORT } = process.env;
 
 import './controller/account';
 import './controller/login';
@@ -20,7 +23,7 @@ import * as swaggerDocument from './swagger.json'
 
 
 const app = express();
-app.set("port", 7001);
+app.set("port", PORT || '7001');
 app.use(express.static('public'));
 
 

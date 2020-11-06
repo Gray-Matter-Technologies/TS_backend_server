@@ -9,6 +9,7 @@ enum task_status {
 
  type taskDoc = mongoose.Document & {
   email: string
+  name: string
   budget: number;
   avatar:string;
   title: string;
@@ -24,6 +25,7 @@ enum task_status {
 
 const taskSchema = new mongoose.Schema({
   email: {type:String, ref:'User'},
+  name: String,
   budget: Number,
   avatar:String,
   title: String,
