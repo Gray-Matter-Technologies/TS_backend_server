@@ -1,0 +1,79 @@
+> 2020-11-06 13:32:39 [34mdebug[39m: Logging initialized at debug level
+> 2020-11-06 13:32:43 [34mdebug[39m: Logging initialized at debug level
+> 2020-11-06 15:41:33 [32minfo[39m: handle request url /login
+> 2020-11-06 15:42:57 [32minfo[39m: handle request url /task/address/b
+> 2020-11-06 15:44:44 [32minfo[39m: handle request url /task/address/B
+> 2020-11-06 15:45:29 [32minfo[39m: handle request url /task/task
+> 2020-11-06 15:48:47 [34mdebug[39m: Logging initialized at debug level
+> 2020-11-06 15:49:27 [32minfo[39m: handle request url /task/address/B
+> 2020-11-06 15:50:39 [32minfo[39m: handle request url /task/task
+> 2020-11-06 16:04:32 [32minfo[39m: handle request url /task/task
+> 2020-11-06 16:14:53 [32minfo[39m: handle request url /task/questions/5f9d44899fe2b710bc30d876
+> 2020-11-06 16:15:35 [34mdebug[39m: Logging initialized at debug level
+> 2020-11-06 16:16:02 [32minfo[39m: handle request url /task/task
+> 2020-11-06 16:29:57 [34mdebug[39m: Logging initialized at debug level
+> 2020-11-06 16:30:01 [34mdebug[39m: Logging initialized at debug level
+> 2020-11-06 16:30:31 [32minfo[39m: handle request url /login
+> 2020-11-06 16:31:27 [32minfo[39m: handle request url /task/address/b
+> 2020-11-06 16:31:28 [32minfo[39m: handle request url /task/address/B
+> 2020-11-06 16:31:30 [32minfo[39m: handle request url /task/address/Bo
+> 2020-11-06 16:31:31 [32minfo[39m: handle request url /task/address/Box
+> 2020-11-06 16:31:35 [32minfo[39m: handle request url /task/address/Bo
+> 2020-11-06 16:31:36 [32minfo[39m: handle request url /task/address/Box
+> 2020-11-06 16:31:37 [32minfo[39m: handle request url /task/address/Box
+> 2020-11-06 16:31:37 [32minfo[39m: handle request url /task/address/Box%20h
+> 2020-11-06 16:31:38 [32minfo[39m: handle request url /task/address/Box
+> 2020-11-06 16:31:39 [32minfo[39m: handle request url /task/address/Box
+> 2020-11-06 16:31:39 [32minfo[39m: handle request url /task/address/Bo
+> 2020-11-06 16:31:39 [32minfo[39m: handle request url /task/address/B
+> 2020-11-06 16:32:22 [32minfo[39m: handle request url /task/task
+> 2020-11-06 16:36:06 [32minfo[39m: handle request url /login
+> 2020-11-06 16:39:14 [32minfo[39m: handle request url /login
+> 2020-11-06 16:39:18 [32minfo[39m: handle request url /login
+> 2020-11-06 16:39:19 [32minfo[39m: handle request url /login
+> 2020-11-06 16:39:19 [32minfo[39m: handle request url /login
+> 2020-11-06 16:39:20 [32minfo[39m: handle request url /login
+> 2020-11-06 16:39:21 [32minfo[39m: handle request url /login
+> 2020-11-06 16:39:21 [32minfo[39m: handle request url /login
+> 2020-11-06 16:39:22 [32minfo[39m: handle request url /login
+> 2020-11-06 16:39:23 [32minfo[39m: handle request url /login
+> 2020-11-06 16:39:23 [32minfo[39m: handle request url /login
+> 2020-11-06 16:39:25 [32minfo[39m: handle request url /login
+> 2020-11-06 16:39:28 [32minfo[39m: handle request url /login
+> 2020-11-06 16:40:31 [32minfo[39m: handle request url /user/signUp
+> 2020-11-06 16:40:50 [32minfo[39m: handle request url /login
+> 2020-11-06 16:47:22 [32minfo[39m: handle request url /task/address/a
+> 2020-11-06 16:47:23 [32minfo[39m: handle request url /task/address/m
+> 2020-11-06 16:47:23 [32minfo[39m: handle request url /task/address/me
+> 2020-11-06 16:47:23 [32minfo[39m: handle request url /task/address/mel
+> 2020-11-06 16:47:24 [32minfo[39m: handle request url /task/address/melb
+> 2020-11-06 16:47:24 [32minfo[39m: handle request url /task/address/melbo
+> 2020-11-06 16:47:24 [32minfo[39m: handle request url /task/address/melbou
+> 2020-11-06 16:47:25 [32minfo[39m: handle request url /task/address/melbour
+> 2020-11-06 16:47:26 [32minfo[39m: handle request url /task/address/melboure
+> 2020-11-06 16:47:26 [32minfo[39m: handle request url /task/address/melbouren
+> 2020-11-06 16:47:27 [32minfo[39m: handle request url /task/address/melboure
+> 2020-11-06 16:47:27 [32minfo[39m: handle request url /task/address/melbour
+> 2020-11-06 16:47:27 [32minfo[39m: handle request url /task/address/melbou
+> 2020-11-06 16:47:28 [32minfo[39m: handle request url /task/address/melbo
+> 2020-11-06 16:47:28 [32minfo[39m: handle request url /task/address/melb
+> 2020-11-06 16:47:28 [32minfo[39m: handle request url /task/address/mel
+> 2020-11-06 16:47:28 [32minfo[39m: handle request url /task/address/me
+> 2020-11-06 16:47:28 [32minfo[39m: handle request url /task/address/m
+> 2020-11-06 16:47:29 [32minfo[39m: handle request url /task/address/M
+> 2020-11-06 16:47:38 [32minfo[39m: handle request url /task/task
+> 2020-11-06 16:49:34 [32minfo[39m: handle request url /task/questions/5fa4e37a1ab4f5b1d1e48cdf
+> 2020-11-06 16:50:14 [32minfo[39m: handle request url /task/offers/5fa4e37a1ab4f5b1d1e48cdf
+> 2020-11-06 17:00:15 [32minfo[39m: handle request url /map/tasks
+> 2020-11-06 17:00:43 [32minfo[39m: handle request url /map/tasks
+> 2020-11-06 17:02:36 [32minfo[39m: handle request url /map/tasks
+> 2020-11-06 17:03:36 [32minfo[39m: handle request url /map/tasks
+> 2020-11-06 17:04:57 [32minfo[39m: handle request url /map/tasks
+> 2020-11-06 17:05:10 [32minfo[39m: handle request url /map/tasks
+> 2020-11-06 17:05:19 [32minfo[39m: handle request url /map/tasks
+> 2020-11-06 17:51:29 [34mdebug[39m: Logging initialized at debug level
+> 2020-11-06 17:56:15 [34mdebug[39m: Logging initialized at debug level
+> 2020-11-06 17:58:12 [34mdebug[39m: Logging initialized at debug level
+> 2020-11-06 17:58:29 [32minfo[39m: handle request url /task/task
+> 2020-11-06 17:59:41 [32minfo[39m: handle request url /task/task
+> 2020-11-06 18:01:11 [32minfo[39m: handle request url /task/task
