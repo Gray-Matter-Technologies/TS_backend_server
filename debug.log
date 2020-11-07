@@ -192,3 +192,5 @@
 > 2020-11-07 03:28:27 [32minfo[39m: handle request url /user/Auth
 > 2020-11-07 03:28:28 [32minfo[39m: handle request url /user/info/18686782752@163.com
 > 2020-11-07 03:28:56 [32minfo[39m: handle request url /user/info/18686782752@163.com
+> 2020-11-07 03:29:15 [34mdebug[39m: Logging initialized at debug level
+> 2020-11-07 12:25:43 [34mdebug[39m: Logging initialized at debug level
